@@ -7,9 +7,9 @@ tela/Scene_Tabuleiro$1.class
 tela/elemento/Atributo$1.class
 tela/elemento/Spinner.class
 tela/elemento/PopUp$1.class
-ticTrackToe/TicTrackToe.class
 tela/Scene_Inicial.class
 tela/Scene_ProcurandoAdversario.class
+tictracktoe/TicTrackToe.class
 tela/elemento/Simbolo.class
 tela/elemento/Botao$3.class
 tela/elemento/PopUp.class
@@ -21,12 +21,11 @@ socket/ClientConnection.class
 tela/Scene_Tabuleiro$Placar.class
 tela/Scene_Tabuleiro$Campo$1.class
 tela/elemento/Texto.class
-ticTrackToe/TicTrackToe$1.class
 tela/Scene_Tabuleiro$3.class
 tela/Scene_SelecionarSimbolo$2.class
 socket/ClientConnection$ConnectionThread.class
 tela/Scene_Conectando$1.class
-ticTrackToe/Principal.class
+tictracktoe/Principal.class
 tela/elemento/Botao.class
 tela/elemento/Botao$2.class
 tela/Scene_Tabuleiro$Campo.class

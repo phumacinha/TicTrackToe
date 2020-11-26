@@ -1,8 +1,8 @@
 package tela;
 
-import MensagemSocket.Acao;
-import MensagemSocket.MensagemParaCliente;
-import MensagemSocket.MensagemParaServidor;
+import mensagemsocket.Acao;
+import mensagemsocket.MensagemParaCliente;
+import mensagemsocket.MensagemParaServidor;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -14,7 +14,7 @@ import javafx.scene.text.Text;
 import tela.elemento.Logotipo;
 import tela.elemento.Spinner;
 import tela.elemento.Texto;
-import ticTrackToe.TicTrackToe;
+import tictracktoe.TicTrackToe;
 
 /**
  * Tela para aguardar a procura de um adversário.

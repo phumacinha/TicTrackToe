@@ -13,7 +13,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextBoundsType;
 import tela.SceneUtil;
-import ticTrackToe.TicTrackToe;
+import tictracktoe.TicTrackToe;
 
 /**
  * Classe extensão de StackPane que modela um botão com estilo padrão dos

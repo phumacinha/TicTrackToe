@@ -1,8 +1,8 @@
 package tela;
 
-import MensagemSocket.Acao;
-import MensagemSocket.MensagemParaCliente;
-import MensagemSocket.MensagemParaServidor;
+import mensagemsocket.Acao;
+import mensagemsocket.MensagemParaCliente;
+import mensagemsocket.MensagemParaServidor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -27,7 +27,7 @@ import tela.elemento.PopUp;
 import tela.elemento.Simbolo;
 import tela.elemento.Simbolo.Jogador;
 import tela.elemento.Texto;
-import ticTrackToe.TicTrackToe;
+import tictracktoe.TicTrackToe;
 
 /**
  * Tela com tabuleiro e placar do jogo da velha.

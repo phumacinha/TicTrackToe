@@ -1,6 +1,6 @@
 package tela;
 
-import MensagemSocket.MensagemParaCliente;
+import mensagemsocket.MensagemParaCliente;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.layout.Priority;

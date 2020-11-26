@@ -1,6 +1,6 @@
 package tela;
 
-import MensagemSocket.MensagemParaCliente;
+import mensagemsocket.MensagemParaCliente;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -15,7 +15,7 @@ import tela.elemento.Botao;
 import tela.elemento.Logotipo;
 import tela.elemento.Simbolo.Jogador;
 import tela.elemento.Texto;
-import ticTrackToe.TicTrackToe;
+import tictracktoe.TicTrackToe;
 
 /**
  * Tela para seleção de símbolo.

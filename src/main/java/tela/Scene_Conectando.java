@@ -1,6 +1,6 @@
 package tela;
 
-import MensagemSocket.MensagemParaCliente;
+import mensagemsocket.MensagemParaCliente;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -10,7 +10,7 @@ import javafx.scene.layout.VBox;
 import tela.elemento.Logotipo;
 import tela.elemento.Spinner;
 import tela.elemento.Texto;
-import ticTrackToe.TicTrackToe;
+import tictracktoe.TicTrackToe;
 
 /** Tela de espera de conexão com o servidor.
  *

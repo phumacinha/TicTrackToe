@@ -5,13 +5,13 @@
  */
 package socket;
 
-import MensagemSocket.MensagemParaServidor;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
 import java.util.function.Consumer;
+import mensagemsocket.MensagemParaServidor;
 
 /**Classe responsável por criar uma conexão com o servidor.
  *
@@ -92,8 +92,8 @@ public class ClientConnection {
         private ObjectOutputStream out;
         private boolean stop = false;
         
-        /**Sobrecarga do método Thread.run().
-         * 
+        /**
+         * Sobrecarga do método Thread.run().
          */
         @Override
         public void run() {
@@ -126,6 +126,7 @@ public class ClientConnection {
                     }
                 }                
                 catch (IOException | ClassNotFoundException e) {
+            System.out.println(e);
                     close();
                 }
             }
