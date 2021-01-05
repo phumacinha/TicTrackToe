@@ -11,7 +11,7 @@ import java.io.ObjectOutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
 import java.util.function.Consumer;
-import mensagemsocket.MensagemParaServidor;
+import etgames.mensagens.MensagemParaServidor;
 
 /**Classe responsável por criar uma conexão com o servidor.
  *

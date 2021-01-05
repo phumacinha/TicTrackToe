@@ -1,6 +1,6 @@
 package tela;
 
-import mensagemsocket.MensagemParaCliente;
+import etgames.mensagens.MensagemParaCliente;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;

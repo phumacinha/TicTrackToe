@@ -1,8 +1,8 @@
 package tela;
 
-import mensagemsocket.Acao;
-import mensagemsocket.MensagemParaCliente;
-import mensagemsocket.MensagemParaServidor;
+import etgames.mensagens.Acao;
+import etgames.mensagens.MensagemParaCliente;
+import etgames.mensagens.MensagemParaServidor;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;

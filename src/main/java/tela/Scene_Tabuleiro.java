@@ -1,8 +1,8 @@
 package tela;
 
-import mensagemsocket.Acao;
-import mensagemsocket.MensagemParaCliente;
-import mensagemsocket.MensagemParaServidor;
+import etgames.mensagens.Acao;
+import etgames.mensagens.MensagemParaCliente;
+import etgames.mensagens.MensagemParaServidor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;

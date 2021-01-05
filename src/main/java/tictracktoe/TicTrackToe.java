@@ -1,6 +1,6 @@
 package tictracktoe;
 
-import mensagemsocket.MensagemParaCliente;
+import etgames.mensagens.MensagemParaCliente;
 import java.util.function.Consumer;
 import javafx.stage.Stage;
 import javafx.application.Application;

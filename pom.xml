@@ -15,9 +15,9 @@
     
     <dependencies>
         <dependency>
-            <groupId>mensagemsocket</groupId>
-            <artifactId>mensagem-socket</artifactId>
-            <version>1.0</version>
+            <groupId>etgames</groupId>
+            <artifactId>comunicacao</artifactId>
+            <version>1.0.0</version>
         </dependency>
         
         <dependency>
