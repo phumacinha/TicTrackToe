@@ -1,19 +1,27 @@
 package tela;
 
+import rastreadordevisao.GazeListener;
 import etgames.mensagens.MensagemParaCliente;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import tela.elemento.Atributo;
 import tela.elemento.PopUp;
+
+import com.theeyetribe.clientsdk.GazeManager;
+import java.awt.AWTException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import tela.elemento.CursorCirculo;
 
 /**Classe abstrata para padronização de telas.
  *
  * @author Pedro Antônio de Souza
  */
 public abstract class SceneUtil {
-    private final StackPane root;
+    private final Pane root;
     private PopUp popup = new PopUp();
     protected double fatorDeEscala = 1;
     
@@ -24,7 +32,27 @@ public abstract class SceneUtil {
         fatorDeEscala();
         
         root = new StackPane();
-      //  root.setScaleX(fatorDeEscala);
+        root.setBackground(Background.EMPTY);
+        root.setCursor(CursorCirculo.getCursor());
+        
+        // Innstancia o rastreador de visão
+        final GazeManager gm = GazeManager.getInstance();
+        boolean success = gm.activate();
+        
+        // Objeto para escuta do servidor
+        final GazeListener gazeListener;
+       
+        // Instanciar o listener do servidor
+        try {
+            gazeListener = new GazeListener();
+            
+            // Inicia a escuta
+            gm.addGazeListener(gazeListener);
+        } catch (AWTException ex) {
+            System.out.println("Erro ao rastrear a visão.");
+        }
+        
+       // root.setScaleX(fatorDeEscala);
        // root.setScaleY(fatorDeEscala);
     }
     
