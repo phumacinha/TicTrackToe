@@ -5,7 +5,9 @@ import java.util.function.Consumer;
 import javafx.stage.Stage;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 
 import socket.ClientConnection;
 import tela.SceneUtil;
@@ -50,11 +52,19 @@ public class TicTrackToe extends Application {
         primaryStage = stage;
         primaryStage.setResizable(false);
         primaryStage.setMaximized(true);
-        primaryStage.initStyle(StageStyle.UNIFIED);
+        //primaryStage.initStyle(StageStyle.UNIFIED);
         
         primaryStage.setTitle("TicTrackToe");
         abrirTela(new Scene_Conectando());
         primaryStage.show();
+        
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent t) {
+                Platform.exit();
+                System.exit(0);
+            }
+        });
     }
     
     /**
