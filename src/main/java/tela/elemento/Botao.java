@@ -143,7 +143,7 @@ public class Botao extends StackPane {
      * Retorna o estilo do botão para seu estado inicial.
      */
     protected void estadoInicial () {
-        setCursor(Cursor.HAND);
+        //setCursor(Cursor.HAND);
         
         setText(value);
         setTextColor(corTexto);
@@ -310,7 +310,7 @@ public class Botao extends StackPane {
     public void disable(boolean disable) {
         this.disable = disable;
         setEffect(null);
-        setCursor(disable ? Cursor.DEFAULT : Cursor.HAND);
+        //setCursor(disable ? Cursor.DEFAULT : Cursor.HAND);
         setOpacity(disable ? .4 : 1);
         this.setDisable(disable);
     }
